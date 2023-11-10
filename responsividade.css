@@ -1,0 +1,25 @@
+:root {
+    font-size: 62.5%;
+}
+
+
+.boxes{
+    position: relative;
+    display: grid;
+    flex-wrap: wrap;
+    height: 100vh;
+    gap: 2rem 5rem;
+}
+
+.box{
+    min-height: 10rem;
+    min-width: 20rem;
+    padding: 1.5rem;
+    border: 10px solid red;
+    border-radius: 0.4rem;  
+    background-color: black;
+    color: #fff;
+    font-size: 4rem;
+    display: inline-block;
+
+}

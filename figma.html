@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web.zip">
+    <link rel="stylesheet" href="figma.css">
+    <title>Login I Cadastro</title>
+</head>
+<body>
+    <script>
+        alert("Bem vindos ao nosso primeiro site!")
+    </script>
+    <h1>Keyzinha</h1>
+    <div class="content">
+        <aside>
+           <img class="hero" src="DALL·E 2023-11-01 17.29.32 - Photo logo for a cloud gaming platform called 'Keyzinha'. The background of the logo is a gradient of black to dark gray. Centered in the image is a s.png" alt="">
+        </aside>
+        <main>
+            <header>
+                <h2>Faça seu cadastro conosco!</h2>
+
+            </header>
+                <hr><br>
+            <form action="coletar_dados.php" method="post" onsubmit="exibirAlerta(); return false;">
+                <div>
+                    <label class="nome" for="texto">Nome:</label>
+                    <input type="text" id=texto placeholder="Informe seu nome..." name="Nome">
+                </div>
+                    <br><br>
+                <div>
+                    <label class="senha" for="senha">Senha:</label>
+                    <input type="password" id="senha" placeholder="Crie sua senha"name="senha">
+                </div>
+                    <br><br>
+                <div>
+                    <label class="email" for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Informe seu e-mail..."name="email">
+                </div>
+                    <br><br>
+                <div>
+                    <label class="data" for="data">Data de Nascimento:</label>
+                    <input type="date" id="data" name="data">
+                </div>
+                    <br><br>
+                <div>
+                    <input type="submit" id="enviar" name="enviar" class="enviar" onclick="coletardados()">
+                </div>   
+                    <hr><br><br><br>
+                        <script>
+                            function coletarDados() {
+                                var texto = document.getElementById('nome').value;
+                                var password = document.getElementById('Senha').value;
+                                var email = document.getElementById('email').value;
+                                var date = document.getElementById('Data de Nascimento').value;
+                            }
+                            function exibirAlerta() {
+                                alert('Formulário enviado com sucesso!');
+                            }
+                        </script>
+                    <footer>
+                        <h3>Fique por dentro dos melhores jogos da atualidade!</h3>
+                    </footer>
+              
+        </main>
+    </div>
+</body>
+</html>
